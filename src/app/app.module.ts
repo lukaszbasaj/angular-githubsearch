@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessageService } from './services/message.service';
 import { ErrorHandlingInterceptor } from './error-handling.interceptor';
 import { ToastrModule } from 'ngx-toastr';
+import { User}
 
 @NgModule({
   declarations: [

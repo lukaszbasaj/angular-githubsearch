@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpInterceptor, HttpRequest, HttpHandler, HttpResponse, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Username } from '../username.model'
+import { Username } from '../user.model'
 import 'rxjs/add/operator/map';
+import { Http } from '@angular/http';
 
 @Injectable()
 export class GithubService {
@@ -10,9 +11,9 @@ export class GithubService {
   private username:Username[];
   private client_id = '949e8ea08bace58ff7ae';
   private client_secret = 'a0c25c4972fce5af853d6e8cf374134138bde7c1';
-  headers: HttpHeaders;  
+  headers: HttpHeaders;
   options: any;
-  apiUrl = 'https://api.github.com/users/'
+  apiUrl = 'https://api.github.com/users/';
 
   constructor(req: HttpRequest<any>, next: HttpHandler) {
    }
