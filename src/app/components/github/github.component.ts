@@ -13,11 +13,10 @@ export class GithubComponent {
   user:any;
 
   constructor(private _githubService:GithubService) { 
-    // console.log('Github Component Init...');
+    console.log('Github Component Init...');
     this._githubService.getUser().subscribe(user => {
-      // console.log(user);
+      console.log(user);
       this.user = user;
     });
   };
-
 }
