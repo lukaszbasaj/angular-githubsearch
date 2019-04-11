@@ -11,6 +11,7 @@ import { GithubService } from '../../services/github.service';
 export class GithubComponent {
 
   user:any;
+  repos:string;
 
   constructor(private _githubService:GithubService) { 
     console.log('Github Component Init...');

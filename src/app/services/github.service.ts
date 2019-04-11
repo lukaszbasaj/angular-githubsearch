@@ -18,7 +18,7 @@ export class GithubService {
           .map((res => res.json())
           )}
 
-    public getReopos(){
+    public getRepos(){
       return this._http.get(`https://api.github.com/users/${this.username}/repos`)
           .map((res => res.json())
           )}
