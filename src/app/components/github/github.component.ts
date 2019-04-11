@@ -10,7 +10,7 @@ import { GithubService } from '../../services/github.service';
 })
 export class GithubComponent {
 
-  user:any;
+  user:string;
   repos:string;
 
   constructor(private _githubService:GithubService) { 
