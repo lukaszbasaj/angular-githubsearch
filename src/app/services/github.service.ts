@@ -10,7 +10,6 @@ export class GithubService {
   private client_secret = 'a0c25c4972fce5af853d6e8cf374134138bde7c1';
 
   constructor(private _http:Http) {
-    console.log('Github Service Init...') 
    }
     
    public getUser(){
