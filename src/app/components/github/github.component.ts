@@ -18,5 +18,9 @@ export class GithubComponent {
       console.log(user);
       this.user = user;
     });
+    this._githubService.getRepos().subscribe(repos => {
+      console.log(repos)
+      this.repos = repos;
+    })
   };
 }
